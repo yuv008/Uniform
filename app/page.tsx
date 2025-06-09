@@ -45,7 +45,7 @@ export default function HomePage() {
               addressRegion: "Maharashtra",
               addressCountry: "India",
             },
-            telephone: "+91-9876543210",
+            telephone: "+91-9422705120",
             email: "info@manalifashion.com",
             url: "https://manalifashion.com",
             priceRange: "$$",

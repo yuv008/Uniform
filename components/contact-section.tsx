@@ -27,7 +27,7 @@ export default function ContactSection() {
                     <p className="text-gray-600">
                       Manali Fashion
                       <br />
-                      Industrial Area, Parbhani
+                      Kalyan Nagar, Parbhani
                       <br />
                       Maharashtra 431401, India
                     </p>
@@ -37,7 +37,7 @@ export default function ContactSection() {
                   <Phone className="h-6 w-6 text-navy-900 mt-1" />
                   <div>
                     <h4 className="font-semibold text-navy-900">Phone</h4>
-                    <p className="text-gray-600">+91-9876543210</p>
+                    <p className="text-gray-600">+91-9422705120</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

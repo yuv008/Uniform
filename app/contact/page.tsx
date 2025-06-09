@@ -64,7 +64,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-navy-900 mb-1">Phone Numbers</h3>
                     <p className="text-gray-600">
-                      Primary: +91-9876543210
+                      Primary: +91-9422705120
                       <br />
                       Secondary: +91-9876543211
                       <br />
@@ -209,13 +209,17 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="h-96 bg-gray-200 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-navy-900 mx-auto mb-4" />
-                <p className="text-gray-600">Interactive Map</p>
-                <p className="text-sm text-gray-500">Manali Fashion, Industrial Area, Parbhani, Maharashtra</p>
-              </div>
-            </div>
+            <iframe
+              src="https://www.google.com/maps?q=Manali+Fashion,+Industrial+Area,+Parbhani,+Maharashtra&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Manali Fashion Location"
+              className="w-full h-[400px]"
+            />
           </div>
         </div>
       </section>
