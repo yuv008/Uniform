@@ -65,44 +65,21 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem; /* From styles/globals.css */
+    line-height: 1.75; /* From styles/globals.css */
+    /* background: #f9f9f6; /* Overridden by @apply bg-background */
+  }
+
+  h1, h2, h3, h4, h5, h6 { /* From styles/globals.css */
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
   }
 }
 
 /* Custom utility classes */
 @layer utilities {
-  .navy-50 {
-    background-color: #f8fafc;
-  }
-  .navy-100 {
-    background-color: #e2e8f0;
-  }
-  .navy-200 {
-    background-color: #cbd5e1;
-  }
-  .navy-800 {
-    background-color: #1e293b;
-  }
-  .navy-900 {
-    background-color: #0f172a;
-  }
-  .text-navy-900 {
-    color: #0f172a;
-  }
-  .bg-navy-900 {
-    background-color: #0f172a;
-  }
-  .bg-navy-800 {
-    background-color: #1e293b;
-  }
-  .bg-navy-100 {
-    background-color: #e2e8f0;
-  }
-  .bg-navy-50 {
-    background-color: #f8fafc;
-  }
-  .hover\:bg-navy-800:hover {
-    background-color: #1e293b;
-  }
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -114,5 +91,8 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  .text-balance { /* From styles/globals.css */
+    text-wrap: balance;
   }
 }
