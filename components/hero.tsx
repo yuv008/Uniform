@@ -1,18 +1,17 @@
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
 
 export default function Hero() {
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-offwhite">
-      {/* Background Image with Overlay */}
+      {/* Background Video with Overlay */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/placeholder.svg?height=900&width=1600"
-          alt="Elegant school uniforms display"
-          fill
-          style={{ objectFit: 'cover' }}
-          className="opacity-70"
-          priority
+        <video
+          src="/vid1.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-navy-900/40" />
       </div>
