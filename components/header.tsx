@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* Top bar */}
-      <div className="bg-navy-900 text-white py-2">
+      <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
@@ -42,12 +42,12 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="bg-navy-900 text-white p-2 rounded-lg">
+            <div className="bg-primary text-primary-foreground p-2 rounded-lg">
               <span className="font-bold text-xl">MF</span>
             </div>
             <div>
-              <h1 className="font-bold text-xl text-navy-900">Manali Fashion</h1>
-              <p className="text-sm text-gray-600">School Uniform Specialists</p>
+              <h1 className="font-bold text-xl text-primary">Manali Fashion</h1>
+              <p className="text-sm text-muted-foreground">School Uniform Specialists</p>
             </div>
           </Link>
 
@@ -57,12 +57,12 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-navy-900 font-medium transition-colors"
+                className="text-foreground hover:text-primary font-medium transition-colors"
               >
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-navy-900 hover:bg-navy-800">Get Quote</Button>
+            <Button>Get Quote</Button>
           </nav>
 
           {/* Mobile menu button */}
@@ -79,13 +79,13 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-navy-900 font-medium"
+                  className="text-foreground hover:text-primary font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-navy-900 hover:bg-navy-800 w-fit">Get Quote</Button>
+              <Button className="w-fit">Get Quote</Button>
             </div>
           </nav>
         )}
