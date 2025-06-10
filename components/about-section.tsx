@@ -22,13 +22,13 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Large Image */}
           <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/placeholder.svg?height=500&width=600"
-              alt="Manali Fashion team and facility"
-              fill
-              style={{ objectFit: 'cover' }}
-              className="rounded-2xl"
-              priority
+            <video
+              src="/vid1.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover rounded-2xl"
             />
           </div>
 

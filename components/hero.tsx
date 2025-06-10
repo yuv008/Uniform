@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background Video with Overlay */}
       <div className="absolute inset-0 z-0">
         <video
-          src="/vid1.mp4"
+          src="/vid2.mp4"
           autoPlay
           loop
           muted
