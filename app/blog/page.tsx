@@ -80,8 +80,8 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-navy-50 to-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-navy-900 mb-6">School Uniform Insights</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">School Uniform Insights</h1>
+          <p className="text-xl text-foreground/90 max-w-3xl mx-auto">
             Expert tips, industry insights, and practical advice for educational institutions. Stay informed about the
             latest trends and best practices in school uniform selection and care.
           </p>
@@ -96,7 +96,7 @@ export default function BlogPage() {
               <button
                 key={index}
                 className={`px-6 py-2 rounded-full font-medium transition-colors ${
-                  index === 0 ? "bg-navy-900 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  index === 0 ? "bg-primary text-primary-foreground" : "bg-gray-100 text-foreground hover:bg-gray-200"
                 }`}
               >
                 {category}
@@ -110,8 +110,8 @@ export default function BlogPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-navy-900 mb-2">Featured Article</h2>
-            <div className="w-20 h-1 bg-navy-900"></div>
+            <h2 className="text-2xl font-bold text-foreground mb-2">Featured Article</h2>
+            <div className="w-20 h-1 bg-primary"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -125,8 +125,8 @@ export default function BlogPage() {
               />
             </div>
             <div className="space-y-6">
-              <div className="flex items-center space-x-4 text-sm text-gray-500">
-                <span className="bg-navy-100 text-navy-900 px-3 py-1 rounded-full">{blogPosts[0].category}</span>
+              <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+                <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">{blogPosts[0].category}</span>
                 <div className="flex items-center space-x-1">
                   <Calendar className="h-4 w-4" />
                   <span>{blogPosts[0].date}</span>
@@ -136,11 +136,11 @@ export default function BlogPage() {
                   <span>{blogPosts[0].author}</span>
                 </div>
               </div>
-              <h2 className="text-3xl font-bold text-navy-900">{blogPosts[0].title}</h2>
-              <p className="text-lg text-gray-600 leading-relaxed">{blogPosts[0].excerpt}</p>
+              <h2 className="text-3xl font-bold text-foreground">{blogPosts[0].title}</h2>
+              <p className="text-lg text-foreground/90 leading-relaxed">{blogPosts[0].excerpt}</p>
               <Link
                 href={`/blog/${blogPosts[0].slug}`}
-                className="inline-flex items-center text-navy-900 font-medium hover:text-navy-700"
+                className="inline-flex items-center text-primary font-medium hover:text-primary/90"
               >
                 Read Full Article
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -154,8 +154,8 @@ export default function BlogPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-navy-900 mb-2">Latest Articles</h2>
-            <div className="w-20 h-1 bg-navy-900"></div>
+            <h2 className="text-2xl font-bold text-foreground mb-2">Latest Articles</h2>
+            <div className="w-20 h-1 bg-primary"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -167,11 +167,11 @@ export default function BlogPage() {
                 <div className="relative h-48">
                   <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-navy-900 text-white px-3 py-1 rounded-full text-xs">{post.category}</span>
+                    <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs">{post.category}</span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center space-x-4 text-xs text-gray-500 mb-3">
+                  <div className="flex items-center space-x-4 text-xs text-muted-foreground mb-3">
                     <div className="flex items-center space-x-1">
                       <Calendar className="h-3 w-3" />
                       <span>{post.date}</span>
@@ -181,11 +181,11 @@ export default function BlogPage() {
                       <span>{post.author}</span>
                     </div>
                   </div>
-                  <h3 className="font-bold text-lg text-navy-900 mb-3 line-clamp-2">{post.title}</h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-3">{post.excerpt}</p>
+                  <h3 className="font-bold text-lg text-foreground mb-3 line-clamp-2">{post.title}</h3>
+                  <p className="text-foreground/90 text-sm mb-4 line-clamp-3">{post.excerpt}</p>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center text-navy-900 font-medium text-sm hover:text-navy-700"
+                    className="inline-flex items-center text-primary font-medium text-sm hover:text-primary/90"
                   >
                     Read More
                     <ArrowRight className="ml-1 h-3 w-3" />
@@ -198,15 +198,15 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 bg-navy-900 text-white">
+      <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
             Subscribe to our newsletter for the latest insights, tips, and trends in school uniform industry.
           </p>
           <div className="max-w-md mx-auto flex gap-4">
-            <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 rounded-lg text-gray-900" />
-            <button className="bg-white text-navy-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+            <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 rounded-lg text-foreground" />
+            <button className="bg-primary-foreground text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary-foreground/90 transition-colors">
               Subscribe
             </button>
           </div>

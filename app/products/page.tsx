@@ -72,14 +72,14 @@ export default function ProductsPage() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-navy-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-primary/10 to-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-navy-900 mb-6">Our Product Range</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Our Product Range</h1>
+          <p className="text-xl text-foreground/90 max-w-3xl mx-auto mb-8">
             Comprehensive uniform solutions for every educational institution. From daily wear to sports activities, we
             provide high-quality garments that students love to wear.
           </p>
-          <Button size="lg" className="bg-navy-900 hover:bg-navy-800">
+          <Button size="lg" className="bg-primary hover:bg-primary/90">
             Request Product Catalog
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
@@ -94,26 +94,26 @@ export default function ProductsPage() {
               className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
             >
               <div className={`space-y-6 ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
-                <h2 className="text-3xl lg:text-4xl font-bold text-navy-900">{category.title}</h2>
-                <p className="text-lg text-gray-600">{category.description}</p>
+                <h2 className="text-3xl lg:text-4xl font-bold text-foreground">{category.title}</h2>
+                <p className="text-lg text-foreground/90">{category.description}</p>
 
                 <div className="space-y-3">
-                  <h3 className="font-bold text-navy-900">Key Features:</h3>
+                  <h3 className="font-bold text-foreground">Key Features:</h3>
                   <div className="grid md:grid-cols-2 gap-2">
                     {category.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center space-x-2">
                         <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700 text-sm">{feature}</span>
+                        <span className="text-foreground text-sm">{feature}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div className="space-y-3">
-                  <h3 className="font-bold text-navy-900">Available Products:</h3>
+                  <h3 className="font-bold text-foreground">Available Products:</h3>
                   <div className="flex flex-wrap gap-2">
                     {category.products.map((product, idx) => (
-                      <span key={idx} className="bg-navy-100 text-navy-900 px-3 py-1 rounded-full text-sm">
+                      <span key={idx} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
                         {product}
                       </span>
                     ))}
@@ -121,14 +121,13 @@ export default function ProductsPage() {
                 </div>
 
                 <div className="flex space-x-4">
-                  <Button className="bg-navy-900 hover:bg-navy-800">Request Sample</Button>
+                  <Button className="bg-primary hover:bg-primary/90">Request Sample</Button>
                   <Button variant="outline">Get Quote</Button>
                 </div>
               </div>
-
-              <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
+              <div className={`${index % 2 === 1 ? "lg:col-start-1" : ""}`}>
                 <Image
-                  src={category.image || "/placeholder.svg"}
+                  src={category.image}
                   alt={category.title}
                   width={600}
                   height={400}
@@ -173,13 +172,13 @@ export default function ProductsPage() {
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-navy-900 mb-6">Ready to Order?</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">Ready to Order?</h2>
+          <p className="text-xl text-foreground/90 max-w-3xl mx-auto mb-8">
             Contact us today to discuss your uniform requirements. Our team will provide you with a detailed quote and
             help you choose the best options for your institution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-navy-900 hover:bg-navy-800">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
               Get Custom Quote
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

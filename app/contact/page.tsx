@@ -16,8 +16,8 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-navy-50 to-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-navy-900 mb-6">Get In Touch</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Get In Touch</h1>
+          <p className="text-xl text-foreground/90 max-w-3xl mx-auto">
             Ready to partner with us for your school uniform needs? We're here to help you every step of the way.
             Contact us today for a personalized consultation.
           </p>
@@ -31,8 +31,8 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-navy-900 mb-6">Contact Information</h2>
-                <p className="text-lg text-gray-600 mb-8">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Contact Information</h2>
+                <p className="text-lg text-foreground/90 mb-8">
                   We're always ready to assist you with your uniform requirements. Reach out to us through any of the
                   following channels.
                 </p>
@@ -40,12 +40,12 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-navy-900 text-white p-3 rounded-lg">
+                  <div className="bg-primary text-primary-foreground p-3 rounded-lg">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-navy-900 mb-1">Our Address</h3>
-                    <p className="text-gray-600">
+                    <h3 className="font-bold text-foreground mb-1">Our Address</h3>
+                    <p className="text-foreground/90">
                       Manali Fashion
                       <br />
                       Plot No. 15, Industrial Area
@@ -58,12 +58,12 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-navy-900 text-white p-3 rounded-lg">
+                  <div className="bg-primary text-primary-foreground p-3 rounded-lg">
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-navy-900 mb-1">Phone Numbers</h3>
-                    <p className="text-gray-600">
+                    <h3 className="font-bold text-foreground mb-1">Phone Numbers</h3>
+                    <p className="text-foreground/90">
                       Primary: +91-9422705120
                       <br />
                       Secondary: +91-9876543211
@@ -74,13 +74,13 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-navy-900 text-white p-3 rounded-lg">
+                  <div className="bg-primary text-primary-foreground p-3 rounded-lg">
                     <Mail className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-navy-900 mb-1">Email Addresses</h3>
-                    <p className="text-gray-600">
-                      General: info@manalifashion.com
+                    <h3 className="font-bold text-foreground mb-1">Email Addresses</h3>
+                    <p className="text-foreground/90">
+                      General: manali.fashion2004@gmail.com
                       <br />
                       Sales: sales@manalifashion.com
                       <br />
@@ -90,27 +90,27 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-navy-900 text-white p-3 rounded-lg">
+                  <div className="bg-primary text-primary-foreground p-3 rounded-lg">
                     <Clock className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-navy-900 mb-1">Working Hours</h3>
-                    <p className="text-gray-600">
+                    <h3 className="font-bold text-foreground mb-1">Working Hours</h3>
+                    <p className="text-foreground/90">
                       Monday - Saturday: 9:00 AM - 7:00 PM
                       <br />
                       Sunday: 10:00 AM - 5:00 PM
                       <br />
-                      <span className="text-sm text-gray-500">Closed on public holidays</span>
+                      <span className="text-sm text-muted-foreground">Closed on public holidays</span>
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Service Areas */}
-              <div className="bg-navy-50 p-6 rounded-xl">
-                <h3 className="font-bold text-navy-900 mb-3">Service Areas</h3>
-                <p className="text-gray-700 mb-4">We proudly serve educational institutions across:</p>
-                <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+              <div className="bg-primary/10 p-6 rounded-xl">
+                <h3 className="font-bold text-primary mb-3">Service Areas</h3>
+                <p className="text-foreground mb-4">We proudly serve educational institutions across:</p>
+                <div className="grid grid-cols-2 gap-2 text-sm text-foreground/90">
                   <div>• Parbhani District</div>
                   <div>• Aurangabad Region</div>
                   <div>• Nanded District</div>
@@ -123,38 +123,24 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="bg-gray-50 p-8 rounded-2xl">
-              <h2 className="text-2xl font-bold text-navy-900 mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-6">Send Us a Message</h2>
               <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                    <Input placeholder="Your full name" required />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Designation</label>
-                    <Input placeholder="Principal, Administrator, etc." />
-                  </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">Full Name *</label>
+                  <input type="text" id="full-name" className="w-full p-3 border border-border rounded-md bg-background text-foreground placeholder:text-foreground/70" placeholder="Enter your full name" required />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">Email Address *</label>
+                  <input type="email" id="email" className="w-full p-3 border border-border rounded-md bg-background text-foreground placeholder:text-foreground/70" placeholder="Enter your email address" required />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">Phone Number</label>
+                  <input type="tel" id="phone" className="w-full p-3 border border-border rounded-md bg-background text-foreground placeholder:text-foreground/70" placeholder="Enter your phone number" />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">School/Institution Name *</label>
-                  <Input placeholder="Name of your institution" required />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-                    <Input type="email" placeholder="your@email.com" required />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-                    <Input type="tel" placeholder="+91-XXXXXXXXXX" required />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
-                  <select className="w-full p-3 border border-gray-300 rounded-md">
+                  <label className="block text-sm font-medium text-foreground mb-2">Subject</label>
+                  <select className="w-full p-3 border border-border rounded-md bg-background text-foreground">
                     <option value="">Select inquiry type</option>
                     <option value="quote">Request Quote</option>
                     <option value="sample">Request Sample</option>
@@ -165,61 +151,40 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Message *</label>
-                  <Textarea
-                    placeholder="Please provide details about your uniform requirements, quantities, timeline, and any specific needs..."
-                    rows={5}
-                    required
-                  />
+                  <label className="block text-sm font-medium text-foreground mb-2">Message *</label>
+                  <textarea id="message" className="w-full p-3 border border-border rounded-md bg-background text-foreground placeholder:text-foreground/70" rows={5} placeholder="Please provide details about your uniform requirements, quantities, timeline, and any specific needs..." required></textarea>
                 </div>
 
                 <div className="flex items-start space-x-2">
                   <input type="checkbox" id="consent" className="mt-1" required />
-                  <label htmlFor="consent" className="text-sm text-gray-600">
+                  <label htmlFor="consent" className="text-sm text-foreground/90">
                     I agree to be contacted by Manali Fashion regarding my inquiry and consent to the processing of my
                     personal data.
                   </label>
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-navy-900 hover:bg-navy-800">
+                <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90">
                   <Send className="mr-2 h-5 w-5" />
                   Send Message
                 </Button>
               </form>
-
-              <div className="mt-6 p-4 bg-green-50 rounded-lg">
-                <p className="text-sm text-green-800">
-                  <strong>Quick Response Guarantee:</strong> We respond to all inquiries within 2 hours during business
-                  hours and within 24 hours on weekends.
-                </p>
-              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Map Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-navy-900 mb-4">Find Us</h2>
-            <p className="text-lg text-gray-600">
-              Visit our facility in Parbhani to see our manufacturing process and discuss your requirements in person.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps?q=Manali+Fashion,+Industrial+Area,+Parbhani,+Maharashtra&output=embed"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Manali Fashion Location"
-              className="w-full h-[400px]"
-            />
+          {/* Find Us Map */}
+          <div className="mt-20">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8 text-center">Find Us</h2>
+            <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.867512411326!2d76.7645166!3d19.7891295!2m3!1f0!2f0!3f0!3m3!1m2!1s0x3bd04e9c70a927a7%3A0x673c680673c6806!2sManali%20Fashion!5e0!3m2!1sen!2sin!4v1700676451296!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>

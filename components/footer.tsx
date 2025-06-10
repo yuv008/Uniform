@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="bg-primary text-primary-foreground p-3 rounded-full mb-2 inline-block">
             <span className="font-serif text-2xl tracking-wide">MF</span>
           </div>
-          <div className="font-serif text-2xl font-bold text-primary mb-1">Manali Fashion</div>
+          <div className="font-serif text-2xl font-bold text-foreground mb-1">Manali Fashion</div>
           <div className="text-muted-foreground font-sans text-sm mb-2">School Uniform Specialists</div>
           <div className="text-foreground font-sans text-base max-w-xl mx-auto mb-2">
             Premium quality school uniforms manufactured with precision and care. Serving educational institutions across Maharashtra since 2008.
@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <div className="text-muted-foreground font-sans text-sm mb-6">
           Kalyan Nagar, Parbhani, Maharashtra 431401, India<br />
-          +91-9422705120 &nbsp;|&nbsp; info@manalifashion.com
+          +91-9422705120 &nbsp;|&nbsp; manali.fashion2004@gmail.com
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-muted-foreground text-xs mb-2">
           <span>© {new Date().getFullYear()} Manali Fashion. All rights reserved.</span>

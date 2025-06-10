@@ -41,19 +41,19 @@ export default function Header() {
     >
       {/* Main header */}
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
-          <Link href="/" className="flex items-center space-x-2">
+        <div className="flex flex-col items-center py-4">
+          <Link href="/" className="flex items-center space-x-2 mb-4">
             <div className="bg-primary text-primary-foreground p-2 rounded-lg">
               <span className="font-bold text-xl">MF</span>
             </div>
             <div>
-              <h1 className="font-bold text-xl text-primary">Manali Fashion</h1>
+              <h1 className="font-bold text-4xl text-foreground">Manali Fashion</h1>
               <p className="text-sm text-muted-foreground">School Uniform Specialists</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center justify-center flex-wrap gap-x-6 gap-y-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}

@@ -46,7 +46,7 @@ export default function ProductsSection() {
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 768px) 100vw, 25vw"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-secondary/70 text-primary-foreground text-center py-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-secondary/70 text-foreground text-center py-4">
                   <span className="font-serif text-xl md:text-2xl font-semibold tracking-wide">{product.title}</span>
                 </div>
               </div>

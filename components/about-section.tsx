@@ -40,7 +40,7 @@ export default function AboutSection() {
             </p>
             <div className="grid gap-6">
               {values.map((value, index) => (
-                <div key={index} className="bg-secondary border border-border rounded-xl p-6 text-primary-foreground">
+                <div key={index} className="bg-secondary border border-border rounded-xl p-6 text-foreground">
                   <h3 className="font-serif text-xl font-semibold mb-2">{value.title}</h3>
                   <p className="font-sans">{value.description}</p>
                 </div>

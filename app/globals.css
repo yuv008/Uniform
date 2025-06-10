@@ -5,19 +5,19 @@
 @layer base {
   :root {
     --background: 30 31% 95%; /* royalBeige.light */
-    --foreground: 222.2 84% 4.9%; /* dark navy/black */
+    --foreground: 0 0% 0%; /* pure black */
     --card: 30 31% 95%; /* royalBeige.light */
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 0%;
     --popover: 30 31% 95%; /* royalBeige.light */
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 0%;
     --primary: 222.2 47.4% 11.2%; /* navy */
     --primary-foreground: 210 40% 98%; /* almost white */
     --secondary: 36 36% 80%;
     --secondary-foreground: 210 20% 98%;
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 0 0% 0%;
     --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent-foreground: 0 0% 0%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
     --border: 36 36% 74%;

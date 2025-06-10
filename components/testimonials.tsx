@@ -37,7 +37,7 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-10">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-secondary border border-border rounded-2xl p-10 flex flex-col items-center text-center shadow-sm text-primary-foreground">
+            <div key={index} className="bg-secondary border border-border rounded-2xl p-10 flex flex-col items-center text-center shadow-sm text-foreground">
               <span className="text-6xl font-serif mb-6 leading-none">"</span>
               <p className="italic font-sans text-lg mb-8">{testimonial.content}</p>
               <div className="mt-auto pt-4">

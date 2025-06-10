@@ -16,7 +16,7 @@ export default function InstantQuoteButton() {
         <Button
           onClick={() => setIsOpen(true)}
           size="lg"
-          className="bg-navy-900 hover:bg-navy-800 rounded-full shadow-lg px-6 py-3"
+          className="bg-gray-800 hover:bg-gray-900 rounded-full shadow-lg px-6 py-3 text-white"
         >
           <MessageCircle className="h-5 w-5 mr-2" />
           Quick Quote
@@ -68,7 +68,7 @@ export default function InstantQuoteButton() {
                   <Textarea placeholder="Custom embroidery, specific colors, delivery timeline..." rows={3} />
                 </div>
 
-                <Button type="submit" className="w-full bg-navy-900 hover:bg-navy-800">
+                <Button type="submit" className="w-full bg-gray-800 hover:bg-gray-900 text-white">
                   Get My Quote
                 </Button>
               </form>

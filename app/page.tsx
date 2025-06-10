@@ -46,7 +46,7 @@ export default function HomePage() {
               addressCountry: "India",
             },
             telephone: "+91-9422705120",
-            email: "info@manalifashion.com",
+            email: "manali.fashion2004@gmail.com",
             url: "https://manalifashion.com",
             priceRange: "$$",
             serviceArea: {
