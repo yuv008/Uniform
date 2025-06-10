@@ -35,24 +35,24 @@ export default function WhyChooseUs() {
   ]
 
   return (
-    <section className="py-20 bg-navy-900 text-white">
+    <section className="py-24 bg-background text-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">Why Schools Choose Manali Fashion</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Why Schools Choose Manali Fashion</h2>
+          <p className="font-sans text-xl text-foreground/90 max-w-2xl mx-auto">
             We understand the unique needs of educational institutions and deliver solutions that exceed expectations
             every time.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {reasons.map((reason, index) => (
-            <div key={index} className="text-center group">
-              <div className="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white/20 transition-colors">
-                <div className="text-white">{reason.icon}</div>
+            <div key={index} className="bg-secondary border border-border rounded-2xl p-8 flex flex-col items-center text-center shadow-sm">
+              <div className="bg-primary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors">
+                <div className="text-primary-foreground">{reason.icon}</div>
               </div>
-              <h3 className="font-bold text-xl mb-3">{reason.title}</h3>
-              <p className="text-gray-300">{reason.description}</p>
+              <h3 className="font-serif text-xl font-semibold mb-3">{reason.title}</h3>
+              <p className="font-sans text-foreground/90">{reason.description}</p>
             </div>
           ))}
         </div>

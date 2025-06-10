@@ -17,7 +17,7 @@ export default function AboutSection() {
   ]
 
   return (
-    <section className="py-24 bg-offwhite">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Large Image */}
@@ -34,15 +34,15 @@ export default function AboutSection() {
 
           {/* About Content */}
           <div className="flex flex-col justify-center h-full">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy-900 mb-8">Crafting Quality Uniforms Since 2008</h2>
-            <p className="font-sans text-lg text-gray-700 mb-10 max-w-xl">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-8">Crafting Quality Uniforms Since 2008</h2>
+            <p className="font-sans text-lg text-foreground/90 mb-10 max-w-xl">
               Based in Parbhani, Maharashtra, Manali Fashion has been the trusted partner for educational institutions seeking high-quality, comfortable, and durable school uniforms. Our commitment to excellence has made us the preferred choice for over 200 schools across the region.
             </p>
             <div className="grid gap-6">
               {values.map((value, index) => (
-                <div key={index} className="bg-white/80 border border-grayish rounded-xl p-6">
-                  <h3 className="font-serif text-xl font-semibold text-navy-900 mb-2">{value.title}</h3>
-                  <p className="font-sans text-gray-600">{value.description}</p>
+                <div key={index} className="bg-secondary border border-border rounded-xl p-6 text-primary-foreground">
+                  <h3 className="font-serif text-xl font-semibold mb-2">{value.title}</h3>
+                  <p className="font-sans">{value.description}</p>
                 </div>
               ))}
             </div>

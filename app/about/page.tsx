@@ -39,7 +39,7 @@ export default function AboutPage() {
   ]
 
   return (
-    <div className="pt-20">
+    <div className="">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-secondary to-white">
         <div className="container mx-auto px-4">

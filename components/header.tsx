@@ -1,12 +1,30 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, Mail } from "lucide-react"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -18,26 +36,9 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      {/* Top bar */}
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-1">
-              <Phone className="h-3 w-3" />
-              <span>+91-9422705120</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <Mail className="h-3 w-3" />
-              <span>info@manalifashion.com</span>
-            </div>
-          </div>
-          <div className="hidden md:block">
-            <span>Serving Schools Across Maharashtra</span>
-          </div>
-        </div>
-      </div>
-
+    <header
+      className={`shadow-sm sticky top-0 z-50 transition-colors duration-300 ${isScrolled ? "bg-background" : "bg-white"}`}
+    >
       {/* Main header */}
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
@@ -57,7 +58,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary font-medium transition-colors"
+                className={`py-2 px-4 rounded-full transition-colors duration-200 ${pathname === item.href ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-primary/10"} font-medium text-sm uppercase tracking-widest`}
               >
                 {item.name}
               </Link>
@@ -79,7 +80,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-primary font-medium"
+                  className={`py-2 px-4 rounded-full transition-colors duration-200 ${pathname === item.href ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-primary/10"} font-medium uppercase tracking-widest`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

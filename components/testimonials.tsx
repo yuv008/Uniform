@@ -26,24 +26,24 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="py-24 bg-offwhite">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy-900 mb-6">What Our Clients Say</h2>
-          <p className="font-sans text-xl text-gray-700 max-w-2xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">What Our Clients Say</h2>
+          <p className="font-sans text-xl text-foreground/90 max-w-2xl mx-auto">
             Don't just take our word for it. Here's what school administrators and decision-makers have to say about our services.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-10">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white/80 border border-grayish rounded-2xl p-10 flex flex-col items-center text-center shadow-sm">
-              <span className="text-6xl text-navy-900 font-serif mb-6 leading-none">"</span>
-              <p className="text-gray-700 mb-8 italic font-sans text-lg">{testimonial.content}</p>
+            <div key={index} className="bg-secondary border border-border rounded-2xl p-10 flex flex-col items-center text-center shadow-sm text-primary-foreground">
+              <span className="text-6xl font-serif mb-6 leading-none">"</span>
+              <p className="italic font-sans text-lg mb-8">{testimonial.content}</p>
               <div className="mt-auto pt-4">
-                <h4 className="font-serif text-lg font-semibold text-navy-900">{testimonial.name}</h4>
-                <p className="text-sm text-gray-600 font-sans">{testimonial.position}</p>
-                <p className="text-sm text-gray-500 font-sans">{testimonial.school}</p>
+                <h4 className="font-serif text-lg font-semibold mb-2">{testimonial.name}</h4>
+                <p className="text-sm font-sans">{testimonial.position}</p>
+                <p className="text-sm font-sans">{testimonial.school}</p>
               </div>
             </div>
           ))}

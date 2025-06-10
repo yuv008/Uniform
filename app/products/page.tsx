@@ -1,57 +1,39 @@
-import type { Metadata } from "next"
+import { Metadata } from "next"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { CheckCircle, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "School Uniform Products - Manali Fashion",
-  description:
-    "Explore our complete range of school uniforms including boys', girls', winter, and sports uniforms. Custom embroidery available.",
+  title: "Products",
+  description: "Explore our comprehensive range of school uniforms and custom services.",
 }
 
 export default function ProductsPage() {
   const productCategories = [
     {
-      title: "Boys' School Uniforms",
-      description: "Complete range of boys' uniforms including shirts, trousers, ties, and accessories",
+      title: "Boys' Uniforms",
+      description:
+        "Durable and comfortable uniforms designed for active boys, ensuring freedom of movement and smart appearance.",
       image: "/placeholder.svg?height=400&width=600",
-      features: [
-        "Premium cotton blend fabrics",
-        "Wrinkle-resistant materials",
-        "Comfortable fit for active students",
-        "Available in all standard sizes",
-        "Custom color options",
-        "Durable construction",
-      ],
-      products: ["Formal Shirts", "Trousers", "Ties", "Blazers", "Sweaters", "Accessories"],
+      features: ["Breathable fabrics", "Reinforced stitching", "Adjustable waistbands", "Easy to maintain"],
+      products: ["Shirts", "Trousers", "Shorts", "Sweaters", "Blazers", "Ties"],
     },
     {
-      title: "Girls' School Uniforms",
-      description: "Elegant and comfortable uniforms designed specifically for girls",
+      title: "Girls' Uniforms",
+      description:
+        "Stylish and comfortable uniforms crafted to provide elegance and comfort, allowing girls to focus on their studies.",
       image: "/placeholder.svg?height=400&width=600",
-      features: [
-        "Comfortable and modest designs",
-        "Fade-resistant colors",
-        "Easy-care fabrics",
-        "Perfect fit guarantee",
-        "Seasonal variations available",
-        "Quality assured materials",
-      ],
-      products: ["Blouses", "Skirts", "Pinafores", "Cardigans", "Scarves", "Hair Accessories"],
+      features: ["Soft, skin-friendly materials", "Modest designs", "Customizable fits", "Fade-resistant colors"],
+      products: ["Blouses", "Skirts", "Pinafores", "Dresses", "Cardigans", "Scarves"],
     },
     {
       title: "Winter Uniforms",
-      description: "Warm and stylish winter uniforms for the cold season",
+      description:
+        "Warm and cozy uniforms designed to keep students comfortable during colder months without compromising on style.",
       image: "/placeholder.svg?height=400&width=600",
-      features: [
-        "Thermal comfort technology",
-        "Weather-resistant materials",
-        "Stylish winter designs",
-        "Layering-friendly options",
-        "Machine washable",
-        "Long-lasting warmth",
-      ],
-      products: ["Winter Blazers", "Sweaters", "Cardigans", "Scarves", "Caps", "Gloves"],
+      features: ["Insulated fabrics", "Lightweight warmth", "Snug fit", "Variety of styles"],
+      products: ["Sweaters", "Blazers", "Jackets", "Woolen Socks", "Caps", "Gloves"],
     },
     {
       title: "Sports Uniforms",
@@ -159,26 +141,26 @@ export default function ProductsPage() {
       ))}
 
       {/* Custom Services */}
-      <section className="py-20 bg-navy-900 text-white">
+      <section className="py-24 bg-background text-foreground">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Custom Services</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Custom Services</h2>
+            <p className="font-sans text-xl text-foreground/90 max-w-2xl mx-auto">
               Beyond our standard products, we offer specialized services to meet your unique requirements and ensure
               complete satisfaction.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {customServices.map((service, index) => (
-              <div key={index} className="bg-white/10 p-8 rounded-xl">
-                <h3 className="font-bold text-xl mb-4">{service.title}</h3>
-                <p className="text-gray-300 mb-6">{service.description}</p>
+              <div key={index} className="bg-secondary border border-border p-8 rounded-2xl shadow-sm">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-4">{service.title}</h3>
+                <p className="font-sans text-foreground/90 mb-6">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-green-400" />
-                      <span className="text-gray-300 text-sm">{feature}</span>
+                      <CheckCircle className="h-5 w-5 text-primary" />
+                      <span className="font-sans text-foreground/90 text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
