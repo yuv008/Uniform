@@ -15,7 +15,7 @@ export default function ProductsPage() {
       title: "Boys' Uniforms",
       description:
         "Durable and comfortable uniforms designed for active boys, ensuring freedom of movement and smart appearance.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/boy_handfolded.jpeg",
       features: ["Breathable fabrics", "Reinforced stitching", "Adjustable waistbands", "Easy to maintain"],
       products: ["Shirts", "Trousers", "Shorts", "Sweaters", "Blazers", "Ties"],
     },
@@ -23,7 +23,7 @@ export default function ProductsPage() {
       title: "Girls' Uniforms",
       description:
         "Stylish and comfortable uniforms crafted to provide elegance and comfort, allowing girls to focus on their studies.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/girl_handfolded.jpeg",
       features: ["Soft, skin-friendly materials", "Modest designs", "Customizable fits", "Fade-resistant colors"],
       products: ["Blouses", "Skirts", "Pinafores", "Dresses", "Cardigans", "Scarves"],
     },
@@ -31,14 +31,14 @@ export default function ProductsPage() {
       title: "Winter Uniforms",
       description:
         "Warm and cozy uniforms designed to keep students comfortable during colder months without compromising on style.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/Sweater.jpeg",
       features: ["Insulated fabrics", "Lightweight warmth", "Snug fit", "Variety of styles"],
       products: ["Sweaters", "Blazers", "Jackets", "Woolen Socks", "Caps", "Gloves"],
     },
     {
       title: "Sports Uniforms",
       description: "High-performance athletic wear for sports and physical activities",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/sports.jpeg",
       features: [
         "Moisture-wicking fabrics",
         "Flexible and stretchable",
@@ -70,7 +70,7 @@ export default function ProductsPage() {
   ]
 
   return (
-    <div className="pt-20">
+    <div className="">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 to-white">
         <div className="container mx-auto px-4 text-center">

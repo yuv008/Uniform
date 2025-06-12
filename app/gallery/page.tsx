@@ -68,7 +68,7 @@ export default function GalleryPage() {
   const categories = ["All", "Boys", "Girls", "Winter", "Sports", "Custom", "Bulk"]
 
   return (
-    <div className="pt-20">
+    <div className="">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 to-white">
         <div className="container mx-auto px-4 text-center">

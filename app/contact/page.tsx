@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="pt-20">
+    <div className="">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-navy-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-primary/10 to-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Get In Touch</h1>
           <p className="text-xl text-foreground/90 max-w-3xl mx-auto">
@@ -176,13 +176,14 @@ export default function ContactPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8 text-center">Find Us</h2>
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.867512411326!2d76.7645166!3d19.7891295!2m3!1f0!2f0!3f0!3m3!1m2!1s0x3bd04e9c70a927a7%3A0x673c680673c6806!2sManali%20Fashion!5e0!3m2!1sen!2sin!4v1700676451296!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.4816205498873!2d76.7833131746695!3d19.261410946126713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd0183189268353%3A0x37d26c7cfee78d36!2sManali%20Fashion%20Designer!5e0!3m2!1sen!2sin!4v1749699640861!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                title="Manali Fashion Location"
               ></iframe>
             </div>
           </div>
